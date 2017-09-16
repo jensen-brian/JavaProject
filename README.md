@@ -1,0 +1,2 @@
+# JavaProject
+Practicing Java coding

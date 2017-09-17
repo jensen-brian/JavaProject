@@ -12,10 +12,6 @@ import java.util.Map;
  * @author Brian Jensen
  * Date: 09/15/2017
  */
-/**
- * @author brian.jensen
- *
- */
 public class BrainTeasers {
 	public static String FIZZ = "fizz";
 	public static String BUZZ = "buzz";

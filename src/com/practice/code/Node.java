@@ -24,7 +24,21 @@ public class Node {
 	
 	@Override
 	public int hashCode() {
-		return 0;
+		return calculateHash(this);
+	}
+	
+	private static int calculateHash(Node node) {
+		final int prime = 31;
+		
+		if (node == null) { return 0; }
+		int hash = prime * node.val;
+		if (node.children != null) {
+			for (int i = 0; i < node.children.size(); i++) {
+				Node child = node.children.get(i);
+				hash += calculateHash(child);
+			}
+		}
+		return hash;		
 	}
 	
 	@Override
